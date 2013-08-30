@@ -1,0 +1,11 @@
+[irc]
+host = irc.example.com
+port = 6667
+nick = botulus
+sigil = !
+
+[modules]
+example = example
+
+[channels]
+bottest = {}
