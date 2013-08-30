@@ -128,6 +128,7 @@ if args.daemon:
     # Start deamon
     daemon = Daemonize(app="botulus", action=bot.run, pid=pidfile)
     daemon.start()
+    bot.module_cleanup()
 else:
     try:
         bot.run()
